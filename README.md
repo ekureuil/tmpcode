@@ -1,6 +1,6 @@
 Stuff to do:
 
-+ Scene Tree:
+1. Scene Tree:
   - Geometry
   - Node
   -> Both are Spatials (taken from jmonkey)
@@ -12,7 +12,7 @@ Stuff to do:
   - Each time a Spatial local transform changes, flag it to be updated
   - On update, traverse the tree and update world transform for sub-tree of Spatial flagged to be updated.
   
-+ Update loop: how about // update ?
+2. Update loop: how about // update ?
 
 | Common (fps, scene tree copy) / Gui / input   | | |
 |-----------------------------------------------|-|-| 
@@ -23,9 +23,9 @@ For a // loop to work:
  + Each thread must work on local data:
    - scene tree must be copied (deep copy too ... quite expensive)
    - same for game loop + physics if physics is on a different thread
-=> It seems to not be a good candidate for //ism
+   => It seems to not be a good candidate for //ism
 
-+ Materials:
+3. Materials:
  - fragment shader
  - vertex shader
  - geometry
